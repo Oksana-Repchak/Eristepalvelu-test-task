@@ -290,7 +290,7 @@ img {
     height: 14px;
     right: 5px;
     bottom: 65%;
-    background-image: url("./..images/switch_Language.svg");
+    background-image: url("./../images/switch_Language.svg");
   }
   .dropbtn::after:hover,
   .dropbtn::after :focus {
