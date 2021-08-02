@@ -1,28 +1,35 @@
 // ___________mobi____________
 .mobi-container {
   display: flex;
+
   @media screen and (max-width: 1919px) {
     border-bottom: 1px solid #e0e0e0;
+    justify-content: center;
   }
 }
+
 .menu-button {
   display: inline-block;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
-}
 
-.menu-button .icon-cross {
-  display: none;
-}
+  & .icon-cross {
+    display: none;
+  }
 
-.menu-button.is-open .icon-cross {
-  display: block;
-}
+  &.is-open .icon-cross {
+    display: block;
+  }
 
-.menu-button.is-open .icon-menu {
-  display: none;
+  &.is-open .icon-menu {
+    display: none;
+  }
+
+  @media screen and (min-width: 1920px) {
+    display: none;
+  }
 }
 
 .menu-container {
@@ -33,7 +40,6 @@
     top: 100%;
     left: 0;
     width: 100%;
-
     height: 430px;
 
     background-color: #ffffff;
@@ -46,6 +52,10 @@
       z-index: 2;
     }
   }
+
+  @media screen and (min-width: 1920px) {
+    display: flex;
+  }
 }
 
 // _____________________________
@@ -56,12 +66,12 @@
 }
 
 .main-nav {
-  padding-bottom: 22px;
   align-items: center;
 
   @media screen and (min-width: 1920px) {
     display: flex;
     border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 22px;
   }
 }
 

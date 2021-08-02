@@ -1,25 +1,28 @@
-// _________mobi____________
-
 .drop-title {
   display: none;
 }
 
 .drop-title-mobi {
+  margin-right: 30px;
   color: #000000;
   text-decoration: line-through;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .dropdown-content {
   @extend %list;
   display: flex;
+  font-size: 16px;
+  line-height: 1.5;
 
   .item:first-child {
-    margin-right: 37px;
+    margin-right: 30px;
   }
 
   .link {
     color: $title-text-color;
-    // padding: 2px 0 2px 25px;
+    padding: 6px 10px;
     text-decoration: none;
     display: block;
   }
@@ -27,13 +30,17 @@
 
 .dropdown {
   display: flex;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.14;
   justify-content: center;
-}
+  align-items: center;
 
-.dropbtn {
-  margin-right: 37px;
+  @media screen and (min-width: 1920px) {
+    &:hover,
+    :focus {
+      color: $accent-color;
+    }
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -41,11 +48,16 @@
     cursor: pointer;
     width: 64px;
     border: 1px solid #000000;
+    padding: 6px 10px;
+
+    &:hover,
+    :focus {
+      border: 1px solid $accent-color;
+    }
 
     .drop-title {
       position: relative;
       display: block;
-      left: 40%;
       color: $title-text-color;
     }
 
@@ -53,37 +65,45 @@
       display: none;
     }
 
-    &::before {
-      position: absolute;
-      content: "";
-
-      width: 24px;
-      height: 24px;
-    }
-
     &::after {
       position: absolute;
 
       content: "";
-      width: 16px;
-      height: 16px;
-      right: 0;
-      bottom: 30%;
+      width: 14px;
+      height: 14px;
+      right: 5px;
+      bottom: 65%;
+
+      background-image: url("../../images/switch_Language.svg");
+
+      &:hover,
+      :focus {
+        fill: $accent-color;
+      }
     }
   }
 
   .dropdown {
     position: relative;
     display: inline-block;
-    margin-right: 37px;
+
+    &:hover,
+    :focus {
+      color: $accent-color;
+    }
   }
 
   .dropdown-content {
     position: absolute;
-
     display: none;
 
-    top: 85%;
+    left: -26px;
+    bottom: -47px;
+
+    border: 1px solid #000000;
+
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .dropdown-content {
@@ -98,7 +118,7 @@
 
   .dropdown-content {
     .link:hover {
-      border: 1px solid $accent-color;
+      color: $accent-color;
     }
   }
 

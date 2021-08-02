@@ -3,24 +3,38 @@
 }
 
 .slideshow-container {
-  max-width: 703px;
   position: relative;
-  top: -215px;
-  left: 210px;
+  max-width: 290px;
+
+  top: -100px;
+  left: 5px;
+
+  @media screen and (min-width: 1920px) {
+    max-width: 703px;
+    top: -215px;
+    left: 210px;
+  }
 }
 
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  padding: 36px 53px;
   border: 1px solid #4f4f4f;
+  padding: 10px 25px;
 
   bottom: 0;
+  @media screen and (min-width: 1920px) {
+    padding: 36px 53px;
+  }
 }
 
 .next {
-  right: 35px;
+  right: 125px;
+
+  @media screen and (min-width: 1920px) {
+    right: 35px;
+  }
 }
 
 // .prev:hover,
