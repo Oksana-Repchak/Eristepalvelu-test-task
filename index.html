@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eristepalvelu</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Website navigation -->
+    <header class="heder">
+      <div class="container">
+        <nav class="main-nav">
+          <div class="mobi-container">
+            <a href="" class="logo"
+              ><svg class="icon-logo" width="260" height="40" aria-label="logo">
+                <use href="./images/sprite.svg#icon-logo"></use></svg
+            ></a>
+
+            <button
+              type="button"
+              class="menu-button"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button
+            >
+              <svg width="36" height="36" aria-label="Mobile menu switch">
+                <use
+                  class="icon-cross"
+                  href="./images/sprite.svg#icon-menu_close"
+                ></use>
+                <use
+                  class="icon-menu"
+                  href="./images/sprite.svg#icon-menu_alt"
+                ></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav">
+              <li class="item">
+                <a class="link current" href="">Insulation</a>
+              </li>
+              <li class="item">
+                <a class="link" href="">Application areas</a>
+              </li>
+              <li class="item">
+                <a class="link" href="">Additional Supplies and Services</a>
+              </li>
+              <li class="item">
+                <a class="link" href="">Contact</a>
+              </li>
+              <li class="item">
+                <a class="link" href="">About us</a>
+              </li>
+            </ul>
+
+            <div class="dropdown">
+              <p class="dropbtn">
+                <span class="drop-title">Eng</span
+                ><span class="drop-title-mobi">English</span>
+              </p>
+              <ul class="dropdown-content">
+                <li class="item"><a class="link" href="#">Swedish</a></li>
+                <li class="item"><a class="link" href="#">Finnish</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Website Hero -->
+      <section class="section-hero">
+        <div class="container hero-padding">
+          <div class="wrapper-title">
+            <h1 class="hero-title">
+              Eristepalvelu M. Lindholm Quality Building Insulation - Your local
+              insulation service in Uusimaa since 1997.
+            </h1>
+
+            <ul class="hero-logo">
+              <li class="item">
+                <img src="./images/logo_ecowool_black.jpg" alt="logo ecowool" />
+              </li>
+              <li class="item">
+                <img src="./images/logo_hunton_black.jpg" alt="logo hunton" />
+              </li>
+              <li class="item">
+                <img src="./images/logo_ISOVER_black.jpg" alt="logo ISOVER" />
+              </li>
+            </ul>
+          </div>
+
+          <p class="hero-text">
+            With over 20 years of experience in 10.000 projects, we take pride
+            in being the best at what we do. Insulation is an investment that
+            pays itself back with reduced heating costs and improves the lives
+            of the people within the homes. Our services are just that;
+            delivering quality ecological thermal insulation. Key benefits from
+            our services are reduced heating costs, the ability to maintain
+            indoor temperatures in winter and summer and, reduced noise
+            transmission between rooms. To achieve the best results, we use the
+            best products available in the market.
+          </p>
+
+          <div class="wrapper-nav-slider">
+            <button class="hero-button">Get a Quote</button>
+
+            <ul class="hero-logo-color">
+              <li class="item">
+                <img
+                  src="./images/logo_luotettava_kumppani.jpg"
+                  alt="logo luotettava kumppani"
+                />
+              </li>
+              <li class="item">
+                <img src="./images/logo_yrittaiat.jpg" alt="logo yrittaiat" />
+              </li>
+            </ul>
+
+            <div class="slider-nav">
+              <p class="slider-number">
+                <span class="slider-number-green">01 /</span> 03
+              </p>
+
+              <a class="prev" onclick="plusSlides(-1)">
+                <svg
+                  class="arrow"
+                  width="30"
+                  height="12"
+                  aria-label="icon left arrow"
+                >
+                  <use href="./images/sprite.svg#icon-left-arrow"></use>
+                </svg>
+              </a>
+              <a class="next" onclick="plusSlides(1)">
+                <svg
+                  class="arrow"
+                  width="30"
+                  height="12"
+                  aria-label="icon left arrow"
+                >
+                  <use href="./images/sprite.svg#icon-right-arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="slider-wrapper">
+            <div class="green-rectangle">
+              <img
+                class="img-watermark"
+                src="./images/Eristepalvelu_stroke.png"
+                alt="Eristepalvelu"
+              />
+            </div>
+
+            <ul class="slideshow-container">
+              <li class="mySlides fade">
+                <img src="./images/Eristepalvelu.jpg" alt="photo example" />
+              </li>
+
+              <li class="mySlides fade">
+                <img src="./images/Eristepalvelu2.jpg" alt="photo example" />
+              </li>
+
+              <li class="mySlides fade">
+                <img src="./images/Eristepalvelu3.jpg" alt="photo example" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

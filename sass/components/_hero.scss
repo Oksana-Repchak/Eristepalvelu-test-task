@@ -1,0 +1,129 @@
+.section-hero {
+  padding-top: 155px;
+  padding-bottom: 64px;
+}
+
+.hero-padding {
+  padding-left: 285px;
+  padding-right: 285px;
+}
+.hero-title {
+  max-width: 699px;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 1.41;
+  color: $title-text-color;
+  margin-right: 162px;
+}
+
+.hero-logo {
+  display: flex;
+
+  .item:not(:last-child) {
+    margin-right: 64px;
+  }
+}
+
+.wrapper-title {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 62px;
+}
+
+.hero-text {
+  max-width: 1220px;
+  margin-bottom: 156px;
+}
+
+.hero-button {
+  margin: 0;
+  margin-bottom: 33px;
+  border: none;
+  padding: 17px 60px;
+  min-width: 220px;
+
+  color: #ffffff;
+  background: linear-gradient(
+    243.29deg,
+    #2fac66 34.73%,
+    #20a257 45.49%,
+    #0e9645 63.42%,
+    #048f3a 82.13%,
+    #008d36 102.73%
+  );
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+
+  transition: visibility 250ms $timing-function;
+  &:hover,
+  &:focus {
+    background: #008d36;
+  }
+}
+
+.hero-logo-color {
+  display: flex;
+  align-items: center;
+  margin-bottom: 180px;
+
+  .item:not(:last-child) {
+    margin-right: 3px;
+  }
+}
+
+.slider-nav {
+  position: relative;
+  width: 310px;
+  height: 215px;
+  background-image: url("../../images/frame.jpg");
+}
+
+.slider-number {
+  position: absolute;
+  top: 35px;
+  right: 60px;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #ffffff;
+
+  .slider-number-green {
+    color: #149038;
+  }
+}
+
+.arrow {
+  fill: #ffffff;
+}
+
+.slider-wrapper {
+  position: relative;
+  top: -550px;
+  right: -310px;
+}
+
+.green-rectangle {
+  min-width: 1261px;
+  min-height: 334px;
+
+  background-image: url("./../../images/shot_building.jpg");
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    243.29deg,
+    #2fac66 34.73%,
+    #20a257 45.49%,
+    #0e9645 63.42%,
+    #048f3a 82.13%,
+    #008d36 102.73%
+  );
+}
+
+.img-watermark {
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}

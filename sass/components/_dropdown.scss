@@ -1,0 +1,109 @@
+// _________mobi____________
+
+.drop-title {
+  display: none;
+}
+
+.drop-title-mobi {
+  color: #000000;
+  text-decoration: line-through;
+}
+
+.dropdown-content {
+  @extend %list;
+  display: flex;
+
+  .item:first-child {
+    margin-right: 37px;
+  }
+
+  .link {
+    color: $title-text-color;
+    // padding: 2px 0 2px 25px;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.dropdown {
+  display: flex;
+  font-size: 16px;
+  line-height: 1.5;
+  justify-content: center;
+}
+
+.dropbtn {
+  margin-right: 37px;
+}
+
+@media screen and (min-width: 1920px) {
+  .dropbtn {
+    cursor: pointer;
+    width: 64px;
+    border: 1px solid #000000;
+
+    .drop-title {
+      position: relative;
+      display: block;
+      left: 40%;
+      color: $title-text-color;
+    }
+
+    .drop-title-mobi {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 24px;
+      height: 24px;
+    }
+
+    &::after {
+      position: absolute;
+
+      content: "";
+      width: 16px;
+      height: 16px;
+      right: 0;
+      bottom: 30%;
+    }
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 37px;
+  }
+
+  .dropdown-content {
+    position: absolute;
+
+    display: none;
+
+    top: 85%;
+  }
+
+  .dropdown-content {
+    .item:first-child {
+      margin-right: 8px;
+    }
+
+    .item:last-child {
+      margin-right: 8px;
+    }
+  }
+
+  .dropdown-content {
+    .link:hover {
+      border: 1px solid $accent-color;
+    }
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
