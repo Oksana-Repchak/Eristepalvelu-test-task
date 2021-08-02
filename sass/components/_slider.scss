@@ -37,12 +37,6 @@
   }
 }
 
-// .prev:hover,
-// .next:hover {
-//   border: 1px solid $accent-color;
-//   border-radius: 50%;
-// }
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -68,15 +62,6 @@
     opacity: 1;
   }
 }
-
-// /* On smaller screens, decrease text size */
-// @media only screen and (max-width: 300px) {
-//   .prev,
-//   .next,
-//   .text {
-//     font-size: 11px;
-//   }
-// }
 
 .fade:not(.show) {
   opacity: 1;

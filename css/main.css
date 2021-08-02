@@ -290,7 +290,7 @@ img {
     height: 14px;
     right: 5px;
     bottom: 65%;
-    background-image: url("../../images/switch_Language.svg");
+    background-image: url("./..images/switch_Language.svg");
   }
   .dropbtn::after:hover,
   .dropbtn::after :focus {
@@ -485,7 +485,7 @@ img {
 
 .slider-nav {
   position: relative;
-  background-image: url("../../images/frame.jpg");
+  background-image: url("./../images/frame.jpg");
   width: 289px;
   height: 52px;
   top: 295px;
@@ -537,7 +537,7 @@ img {
 .green-rectangle {
   min-width: 300px;
   min-height: 160px;
-  background-image: url("./../../images/shot_building.jpg");
+  background-image: url("./../images/shot_building.jpg");
   background-repeat: no-repeat;
   background: linear-gradient(243.29deg, #2fac66 34.73%, #20a257 45.49%, #0e9645 63.42%, #048f3a 82.13%, #008d36 102.73%);
 }
