@@ -158,6 +158,9 @@ img {
     display: flex;
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 22px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -165,8 +168,10 @@ img {
   margin-bottom: 48px;
 }
 
-.site-nav .item:not(:last-child) {
-  margin-bottom: 32px;
+@media screen and (max-width: 1919px) {
+  .site-nav .item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -289,7 +294,7 @@ img {
     width: 14px;
     height: 14px;
     right: 5px;
-    bottom: 65%;
+    bottom: 25%;
     background-image: url("./../images/switch_Language.svg");
   }
   .dropbtn::after:hover,
@@ -308,7 +313,7 @@ img {
     position: absolute;
     display: none;
     left: -26px;
-    bottom: -47px;
+    top: 30px;
     border: 1px solid #000000;
     font-size: 16px;
     line-height: 1.5;

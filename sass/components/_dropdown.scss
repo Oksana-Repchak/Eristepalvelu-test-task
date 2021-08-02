@@ -72,8 +72,7 @@
       width: 14px;
       height: 14px;
       right: 5px;
-      bottom: 65%;
-
+      bottom: 25%;
       background-image: url("./../images/switch_Language.svg");
 
       &:hover,
@@ -98,8 +97,7 @@
     display: none;
 
     left: -26px;
-    bottom: -47px;
-
+    top: 30px;
     border: 1px solid #000000;
 
     font-size: 16px;
