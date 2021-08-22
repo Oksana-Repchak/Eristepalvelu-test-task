@@ -48,11 +48,11 @@ img {
   // padding-right: 68px;
   min-height: inherit;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: $mobile-screen) {
     width: 320px;
   }
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: $desktop-screen) {
     width: 1920px;
   }
 }

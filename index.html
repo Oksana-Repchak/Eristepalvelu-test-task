@@ -23,13 +23,13 @@
     <!-- Website navigation -->
     <header class="heder">
       <div class="container">
-        <nav class="main-nav">
-          <div class="mobi-container">
-            <a href="" class="logo"
-              ><svg class="icon-logo" width="260" height="40" aria-label="logo">
-                <use href="./images/sprite.svg#icon-logo"></use></svg
-            ></a>
+        <div class="backdrop is-hidden" data-backdrop></div>
 
+        <nav class="main-nav">
+          <div class="nav-mobi">
+            <a href="" class="logo">
+              <img src="./images/logo.png" alt="logo" />
+            </a>
             <button
               type="button"
               class="menu-button"
@@ -93,27 +93,15 @@
               insulation service in Uusimaa since 1997.
             </h1>
 
-            <ul class="hero-logo-mobi">
-              <li class="item">
-                <img src="./images/logo_ecowool.jpg" alt="logo ecowool" />
-              </li>
-              <li class="item">
-                <img src="./images/logo_hunton.jpg" alt="logo hunton" />
-              </li>
-              <li class="item">
-                <img src="./images/logo_ISOVER.jpg" alt="logo ISOVER" />
-              </li>
-            </ul>
-
             <ul class="hero-logo">
               <li class="item">
-                <img src="./images/logo_ecowool_black.jpg" alt="logo ecowool" />
+                <div class="logo-ecowool"></div>
               </li>
               <li class="item">
-                <img src="./images/logo_hunton_black.jpg" alt="logo hunton" />
+                <div class="logo-hunton"></div>
               </li>
               <li class="item">
-                <img src="./images/logo_ISOVER_black.jpg" alt="logo ISOVER" />
+                <div class="logo-isover"></div>
               </li>
             </ul>
           </div>
@@ -199,7 +187,6 @@
         </div>
       </section>
     </main>
-
     <script src="./js/slider.js"></script>
     <script src="./js/menu.js"></script>
   </body>

@@ -9,7 +9,7 @@
   top: -100px;
   left: 5px;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: $desktop-screen) {
     max-width: 703px;
     top: -215px;
     left: 210px;
@@ -24,7 +24,7 @@
   padding: 10px 25px;
 
   bottom: 0;
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: $desktop-screen) {
     padding: 36px 53px;
   }
 }
@@ -32,7 +32,7 @@
 .next {
   right: 125px;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: $desktop-screen) {
     right: 35px;
   }
 }

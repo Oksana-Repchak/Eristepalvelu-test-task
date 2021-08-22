@@ -35,7 +35,7 @@
   justify-content: center;
   align-items: center;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: $desktop-screen) {
     &:hover,
     :focus {
       color: $accent-color;
@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: $desktop-screen) {
   .dropbtn {
     cursor: pointer;
     width: 64px;
