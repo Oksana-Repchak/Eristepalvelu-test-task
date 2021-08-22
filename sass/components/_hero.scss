@@ -38,39 +38,39 @@
   .logo-ecowool {
     width: 32px;
     height: 30px;
-    background-image: url("../../images/logo_ecowool_black.jpg");
+    background-image: url("./../images/logo_ecowool_black.jpg");
 
     transition: all 250ms $timing-function;
 
     &:hover,
     &:focus {
-      background-image: url("../../images/logo_ecowool.jpg");
+      background-image: url("./../images/logo_ecowool.jpg");
     }
   }
 
   .logo-hunton {
     width: 118px;
     height: 30px;
-    background-image: url("../../images/logo_hunton_black.jpg");
+    background-image: url("./../images/logo_hunton_black.jpg");
 
     transition: all 250ms $timing-function;
 
     &:hover,
     &:focus {
-      background-image: url("../../images/logo_hunton.jpg");
+      background-image: url("./../images/logo_hunton.jpg");
     }
   }
 
   .logo-isover {
     width: 75px;
     height: 30px;
-    background-image: url("../../images/logo_ISOVER_black.jpg");
+    background-image: url("./../images/logo_ISOVER_black.jpg");
 
     transition: all 250ms $timing-function;
 
     &:hover,
     &:focus {
-      background-image: url("../../images/logo_ISOVER.jpg");
+      background-image: url("./../images/logo_ISOVER.jpg");
     }
   }
 

@@ -405,37 +405,37 @@ img {
 .hero-logo .logo-ecowool {
   width: 32px;
   height: 30px;
-  background-image: url("../../images/logo_ecowool_black.jpg");
+  background-image: url("./../images/logo_ecowool_black.jpg");
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-logo .logo-ecowool:hover, .hero-logo .logo-ecowool:focus {
-  background-image: url("../../images/logo_ecowool.jpg");
+  background-image: url("./../images/logo_ecowool.jpg");
 }
 
 .hero-logo .logo-hunton {
   width: 118px;
   height: 30px;
-  background-image: url("../../images/logo_hunton_black.jpg");
+  background-image: url("./../images/logo_hunton_black.jpg");
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-logo .logo-hunton:hover, .hero-logo .logo-hunton:focus {
-  background-image: url("../../images/logo_hunton.jpg");
+  background-image: url("./../images/logo_hunton.jpg");
 }
 
 .hero-logo .logo-isover {
   width: 75px;
   height: 30px;
-  background-image: url("../../images/logo_ISOVER_black.jpg");
+  background-image: url("./../images/logo_ISOVER_black.jpg");
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-logo .logo-isover:hover, .hero-logo .logo-isover:focus {
-  background-image: url("../../images/logo_ISOVER.jpg");
+  background-image: url("./../images/logo_ISOVER.jpg");
 }
 
 .hero-logo .item:not(:last-child) {
