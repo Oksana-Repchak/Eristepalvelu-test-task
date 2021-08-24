@@ -1,8 +1,9 @@
-.drop-title {
+// _____mobile screen_________
+.menu-link {
   display: none;
 }
 
-.drop-title-mobi {
+.menu-link-mobi {
   margin-right: 30px;
   color: #000000;
   text-decoration: line-through;
@@ -10,7 +11,7 @@
   line-height: 1.5;
 }
 
-.dropdown-content {
+.submenu {
   @extend %list;
   display: flex;
   font-size: 16px;
@@ -20,7 +21,7 @@
     margin-right: 30px;
   }
 
-  .link {
+  .submenu-link {
     color: $title-text-color;
     padding: 6px 10px;
     text-decoration: none;
@@ -34,94 +35,90 @@
   line-height: 1.14;
   justify-content: center;
   align-items: center;
-
-  @media screen and (min-width: $desktop-screen) {
-    &:hover,
-    :focus {
-      color: $accent-color;
-    }
-  }
 }
 
+// _________________________________________________
+
 @media screen and (min-width: $desktop-screen) {
-  .dropbtn {
-    cursor: pointer;
-    width: 64px;
-    border: 1px solid #000000;
-    padding: 6px 10px;
+  .dropdown {
+    position: relative;
+  }
 
-    &:hover,
-    :focus {
-      border: 1px solid $accent-color;
-    }
+  .menu-link-mobi {
+    display: none;
+  }
 
-    .drop-title {
-      position: relative;
-      display: block;
-      color: $title-text-color;
-    }
+  .dropdown:hover .submenu {
+    display: block;
+  }
 
-    .drop-title-mobi {
-      display: none;
+  .dropdown:hover .menu-link {
+    outline: 1px solid $accent-color;
+    color: $accent-color;
+
+    &::after {
+      top: 13px;
+      background-repeat: no-repeat;
+      background-image: url("./../images/switch_Language_open.svg");
     }
+  }
+
+  .menu-link {
+    min-width: 64px;
+
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+
+    font-size: 14px;
+    line-height: 1.14;
+    outline: 1px solid #000000;
+
+    display: block;
+    padding: 10px 6px;
+    color: #000000;
 
     &::after {
       position: absolute;
 
       content: "";
+      background-position: 50% 50%;
+
       width: 14px;
       height: 14px;
       right: 5px;
       bottom: 25%;
       background-image: url("./../images/switch_Language.svg");
-
-      &:hover,
-      :focus {
-        fill: $accent-color;
-      }
     }
   }
 
-  .dropdown {
-    position: relative;
-    display: inline-block;
-
-    &:hover,
-    :focus {
-      color: $accent-color;
-    }
-  }
-
-  .dropdown-content {
+  .submenu {
     position: absolute;
-    display: none;
+    right: 0;
+    top: 110%;
 
-    left: -26px;
-    top: 30px;
-    border: 1px solid #000000;
+    min-width: 100px;
+
+    margin: 0;
+    list-style: none;
+    padding: 10px;
+    outline: 1px solid #000000;
+
+    display: none;
+  }
+
+  .submenu-link {
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
 
     font-size: 16px;
     line-height: 1.5;
-  }
+    color: #000000;
 
-  .dropdown-content {
-    .item:first-child {
-      margin-right: 8px;
-    }
-
-    .item:last-child {
-      margin-right: 8px;
-    }
-  }
-
-  .dropdown-content {
-    .link:hover {
+    &:hover,
+    &:focus {
       color: $accent-color;
     }
-  }
-
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
   }
 }
