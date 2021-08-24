@@ -16,6 +16,33 @@
   }
 }
 
+.slide-img {
+  border-bottom-width: 4px;
+  @media screen and (min-width: $desktop-screen) {
+    border-bottom-width: 1px;
+  }
+
+  border-bottom-style: solid;
+  border-bottom-color: $accent-color;
+}
+
+.slider-line {
+  position: absolute;
+  width: 187px;
+  height: 4px;
+  background-color: #000000;
+  right: 223px;
+  bottom: -466px;
+
+  @media screen and (min-width: $desktop-screen) {
+    width: 230px;
+    height: 1px;
+
+    bottom: 217px;
+    right: 437px;
+  }
+}
+
 .prev,
 .next {
   cursor: pointer;
@@ -33,7 +60,54 @@
   right: 125px;
 
   @media screen and (min-width: $desktop-screen) {
-    right: 35px;
+    right: 31px;
+  }
+}
+
+.slider-nav {
+  position: relative;
+  background-image: url("./../images/frame.jpg");
+  width: 289px;
+  height: 52px;
+  top: 300px;
+  left: 5px;
+
+  @media screen and (min-width: $desktop-screen) {
+    width: 310px;
+    height: 215px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.slider-number {
+  position: absolute;
+  color: #ffffff;
+  left: 200px;
+  top: 11px;
+  font-size: 16px;
+  line-height: 1.87;
+
+  @media screen and (min-width: $desktop-screen) {
+    top: 35px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .slider-number-green {
+    color: #149038;
+  }
+}
+
+.arrow {
+  fill: #ffffff;
+}
+
+.slider-wrapper {
+  @media screen and (min-width: $desktop-screen) {
+    position: relative;
+    top: -550px;
+    right: -310px;
   }
 }
 

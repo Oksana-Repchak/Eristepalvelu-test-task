@@ -162,53 +162,6 @@
   }
 }
 
-.slider-nav {
-  position: relative;
-  background-image: url("./../images/frame.jpg");
-  width: 289px;
-  height: 52px;
-  top: 295px;
-  left: 5px;
-
-  @media screen and (min-width: $desktop-screen) {
-    width: 310px;
-    height: 215px;
-    top: 0;
-    left: 0;
-  }
-}
-
-.slider-number {
-  position: absolute;
-  color: #ffffff;
-  left: 200px;
-  top: 11px;
-  font-size: 16px;
-  line-height: 1.87;
-
-  @media screen and (min-width: $desktop-screen) {
-    top: 35px;
-    font-size: 18px;
-    line-height: 1.67;
-  }
-
-  .slider-number-green {
-    color: #149038;
-  }
-}
-
-.arrow {
-  fill: #ffffff;
-}
-
-.slider-wrapper {
-  @media screen and (min-width: $desktop-screen) {
-    position: relative;
-    top: -550px;
-    right: -310px;
-  }
-}
-
 .green-rectangle {
   min-width: 300px;
   min-height: 160px;
