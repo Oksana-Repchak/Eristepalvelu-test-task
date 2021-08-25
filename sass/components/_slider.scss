@@ -6,13 +6,13 @@
   position: relative;
   max-width: 290px;
 
-  top: -100px;
-  left: 5px;
+  // top: -100px;
+  // left: 5px;
 
   @media screen and (min-width: $desktop-screen) {
     max-width: 703px;
-    top: -215px;
-    left: 210px;
+    // top: -215px;
+    // left: 210px;
   }
 }
 
@@ -26,22 +26,22 @@
   border-bottom-color: $accent-color;
 }
 
-.slider-line {
-  position: absolute;
-  width: 187px;
-  height: 4px;
-  background-color: #000000;
-  right: 223px;
-  bottom: -523px;
+// .slider-line {
+//   position: absolute;
+//   width: 187px;
+//   height: 4px;
+//   background-color: #000000;
+//   right: 223px;
+//   bottom: -523px;
 
-  @media screen and (min-width: $desktop-screen) {
-    width: 230px;
-    height: 1px;
+//   @media screen and (min-width: $desktop-screen) {
+//     width: 230px;
+//     height: 1px;
 
-    bottom: 215px;
-    right: 437px;
-  }
-}
+//     bottom: 215px;
+//     right: 437px;
+//   }
+// }
 
 .prev,
 .next {
@@ -69,14 +69,14 @@
   background-image: url("./../images/frame.jpg");
   width: 289px;
   height: 52px;
-  top: 300px;
-  left: 5px;
+  // top: 300px;
+  // left: 5px;
 
   @media screen and (min-width: $desktop-screen) {
     width: 310px;
     height: 215px;
-    top: 0;
-    left: 0;
+    // top: 0;
+    // left: 0;
   }
 }
 
@@ -106,8 +106,8 @@
 .slider-wrapper {
   @media screen and (min-width: $desktop-screen) {
     position: relative;
-    top: -550px;
-    right: -310px;
+    // top: -550px;
+    // right: -310px;
   }
 }
 

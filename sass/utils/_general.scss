@@ -44,15 +44,13 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 
-  // padding-left: 68px;
-  // padding-right: 68px;
   min-height: inherit;
 
   @media screen and (min-width: $mobile-screen) {
-    width: 320px;
+    min-width: 320px;
   }
 
   @media screen and (min-width: $desktop-screen) {
-    width: 1920px;
+    min-width: 1024px;
   }
 }

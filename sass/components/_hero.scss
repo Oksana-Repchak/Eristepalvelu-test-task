@@ -10,8 +10,26 @@
 
 .hero-padding {
   @media screen and (min-width: $desktop-screen) {
-    padding-left: 285px;
-    padding-right: 285px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  @media screen and (min-width: 1500px) {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+
+.wrapper-title {
+  @media screen and (min-width: $desktop-screen) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-bottom: 62px;
+  }
+
+  @media screen and (min-width: 2350px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -25,15 +43,25 @@
 
   @media screen and (min-width: $desktop-screen) {
     max-width: 699px;
+    margin-bottom: 0;
+
     font-size: 34px;
     line-height: 1.41;
-    margin-right: 162px;
+  }
+
+  @media screen and (min-width: 2350px) {
+    grid-column-start: 2;
   }
 }
 
 .hero-logo {
   display: flex;
-  margin-bottom: 30px;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  @media screen and (max-width: $desktop-screen - 1px) {
+    margin-bottom: 30px;
+  }
 
   .logo-ecowool {
     width: 32px;
@@ -83,14 +111,6 @@
   }
 }
 
-.wrapper-title {
-  @media screen and (min-width: $desktop-screen) {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 62px;
-  }
-}
-
 .hero-text {
   @media screen and (max-width: $desktop-screen - 1px) {
     margin-bottom: 30px;
@@ -105,13 +125,14 @@
 
   @media screen and (min-width: $desktop-screen) {
     max-width: 1220px;
+    margin: 0 auto;
     margin-bottom: 156px;
   }
 }
 
 .hero-button {
   margin: 0;
-  margin-bottom: 33px;
+  // margin-bottom: 33px;
   border: none;
   padding: 18px 95px;
   min-width: 290px;

@@ -22,69 +22,69 @@
   <body>
     <!-- Website navigation -->
     <header class="heder">
-      <div class="container">
-        <div class="backdrop is-hidden" data-backdrop></div>
+      <!-- <div class="container"> -->
+      <div class="backdrop is-hidden" data-backdrop></div>
 
-        <nav class="main-nav">
-          <div class="nav-mobi">
-            <a href="" class="logo">
-              <img src="./images/logo.png" alt="logo" />
-            </a>
-            <button
-              type="button"
-              class="menu-button"
-              aria-expanded="false"
-              aria-controls="menu-container"
-              data-menu-button
-            >
-              <svg width="20" height="20" aria-label="Mobile menu switch">
-                <use
-                  class="icon-cross"
-                  href="./images/sprite.svg#icon-menu_close"
-                ></use>
-                <use
-                  class="icon-menu"
-                  href="./images/sprite.svg#icon-menu_alt"
-                ></use>
-              </svg>
-            </button>
-          </div>
+      <nav class="main-nav wrapper-grid">
+        <div class="nav-mobi">
+          <a href="" class="logo">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="20" height="20" aria-label="Mobile menu switch">
+              <use
+                class="icon-cross"
+                href="./images/sprite.svg#icon-menu_close"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/sprite.svg#icon-menu_alt"
+              ></use>
+            </svg>
+          </button>
+        </div>
 
-          <div class="menu-container" id="menu-container" data-menu>
-            <ul class="site-nav">
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="site-nav">
+            <li class="item">
+              <a class="link current" href="">Insulation</a>
+            </li>
+            <li class="item">
+              <a class="link" href="">Application areas</a>
+            </li>
+            <li class="item">
+              <a class="link" href="">Additional Supplies and Services</a>
+            </li>
+            <li class="item">
+              <a class="link" href="">Contact</a>
+            </li>
+            <li class="item">
+              <a class="link" href="">About us</a>
+            </li>
+          </ul>
+
+          <div class="dropdown">
+            <a href="" class="menu-link">Eng</a>
+            <a href="" class="menu-link-mobi">English</a>
+
+            <ul class="submenu">
               <li class="item">
-                <a class="link current" href="">Insulation</a>
+                <a class="submenu-link" href="">Swedish</a>
               </li>
               <li class="item">
-                <a class="link" href="">Application areas</a>
-              </li>
-              <li class="item">
-                <a class="link" href="">Additional Supplies and Services</a>
-              </li>
-              <li class="item">
-                <a class="link" href="">Contact</a>
-              </li>
-              <li class="item">
-                <a class="link" href="">About us</a>
+                <a class="submenu-link" href="">Finnish</a>
               </li>
             </ul>
-
-            <div class="dropdown">
-              <a href="" class="menu-link">Eng</a>
-              <a href="" class="menu-link-mobi">English</a>
-
-              <ul class="submenu">
-                <li class="item">
-                  <a class="submenu-link" href="">Swedish</a>
-                </li>
-                <li class="item">
-                  <a class="submenu-link" href="">Finnish</a>
-                </li>
-              </ul>
-            </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
+      <!-- </div> -->
     </header>
     <main>
       <!-- Website Hero -->

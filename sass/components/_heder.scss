@@ -86,6 +86,7 @@
 .heder {
   position: relative;
   padding-top: 22px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .main-nav {
@@ -94,11 +95,7 @@
   align-items: center;
 
   @media screen and (min-width: $desktop-screen) {
-    display: flex;
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 22px;
     padding-top: 22px;
-    justify-content: center;
   }
 }
 
@@ -137,10 +134,10 @@
 }
 
 .logo {
-  margin-right: 100px;
+  // margin-right: 100px;
 
   @media screen and (min-width: $desktop-screen) {
-    margin-right: 820px;
+    // margin-right: 300px;
   }
 }
 
@@ -149,4 +146,10 @@
     width: 155px;
     height: 24px;
   }
+}
+
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
 }
