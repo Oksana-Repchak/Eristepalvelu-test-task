@@ -130,6 +130,21 @@
   }
 }
 
+.wrapper-button {
+  margin-right: auto;
+}
+
+.wrapper-slider-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 1.5fr;
+  justify-items: center;
+
+  @media screen and (min-width: 2160px) {
+    max-width: 2160px;
+  }
+}
+
 .hero-button {
   margin: 0;
   // margin-bottom: 33px;
@@ -175,7 +190,7 @@
   }
 
   @media screen and (min-width: $desktop-screen) {
-    margin-bottom: 180px;
+    // margin-bottom: 180px;
   }
 
   .item:not(:last-child) {
