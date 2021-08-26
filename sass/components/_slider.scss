@@ -68,15 +68,16 @@
 
   bottom: 0;
   @media screen and (min-width: $desktop-screen) {
-    padding: 36px 53px;
+    padding: 35px 50px;
+    max-width: 135px;
   }
 }
 
 .next {
-  right: 125px;
+  left: 82px;
 
   @media screen and (min-width: $desktop-screen) {
-    right: 35px;
+    left: 132px;
   }
 }
 
@@ -95,10 +96,6 @@
     min-width: 310px;
     max-height: 215px;
   }
-
-  // @media screen and (min-width: $desktop-screen) and (max-width: 1115px) {
-  //   max-width: 280px;
-  // }
 }
 
 .slider-number {

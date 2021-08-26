@@ -228,6 +228,10 @@
     #048f3a 82.13%,
     #008d36 102.73%
   );
+
+  @media screen and (min-width: $desktop-screen) and (max-width: 1200px) {
+    min-height: 205px;
+  }
 }
 
 .img-watermark {

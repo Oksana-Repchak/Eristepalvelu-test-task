@@ -628,6 +628,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .green-rectangle {
+    min-height: 205px;
+  }
+}
+
 .img-watermark {
   padding-top: 15px;
   padding-left: 15px;
@@ -708,17 +714,18 @@ img {
 @media screen and (min-width: 1024px) {
   .prev,
   .next {
-    padding: 36px 53px;
+    padding: 35px 50px;
+    max-width: 135px;
   }
 }
 
 .next {
-  right: 125px;
+  left: 82px;
 }
 
 @media screen and (min-width: 1024px) {
   .next {
-    right: 35px;
+    left: 132px;
   }
 }
 
