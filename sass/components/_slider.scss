@@ -1,3 +1,16 @@
+.wrapper-slider-grid {
+  @media screen and (min-width: $desktop-screen) {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    justify-items: center;
+  }
+
+  @media screen and (min-width: 2160px) {
+    max-width: 2160px;
+  }
+}
+
 .mySlides {
   display: none;
 }
@@ -7,12 +20,11 @@
   max-width: 290px;
 
   top: 50%;
-  // left: 5px;
 
   @media screen and (min-width: $desktop-screen) {
     max-width: 400px;
-    bottom: 25%;
     left: 17%;
+    top: 70px;
   }
 
   @media screen and (min-width: 2000px) {
@@ -64,7 +76,7 @@
   right: 125px;
 
   @media screen and (min-width: $desktop-screen) {
-    right: 14px;
+    right: 35px;
   }
 }
 
@@ -80,7 +92,7 @@
   }
 
   @media screen and (min-width: $desktop-screen) {
-    max-width: 310px;
+    min-width: 310px;
     max-height: 215px;
   }
 
