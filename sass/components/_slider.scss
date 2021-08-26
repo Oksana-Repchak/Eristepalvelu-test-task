@@ -76,6 +76,7 @@
     max-width: 289px;
     min-height: 52px;
     top: 110px;
+    margin: 0 auto;
   }
 
   @media screen and (min-width: $desktop-screen) {
@@ -113,6 +114,12 @@
 
 .slider-wrapper {
   position: relative;
+
+  @media screen and (max-width: $desktop-screen - 1px) {
+    display: flex;
+    justify-content: center;
+  }
+
   @media screen and (min-width: $desktop-screen) {
     grid-row-start: 1;
     grid-row-end: 3;
