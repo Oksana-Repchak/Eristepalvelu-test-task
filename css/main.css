@@ -43,8 +43,8 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   min-height: inherit;
 }
 
@@ -58,6 +58,11 @@ img {
   .container {
     min-width: 1024px;
   }
+}
+
+.container.no-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .site-nav, .submenu {

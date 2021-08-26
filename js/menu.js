@@ -2,6 +2,7 @@
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
   const backdrop = document.querySelector("[data-backdrop]");
+  const container = document.querySelector(".container");
 
   menuBtnRef.addEventListener("click", () => {
     const expanded =
@@ -13,5 +14,6 @@
     mobileMenuRef.classList.toggle("is-open");
 
     backdrop.classList.toggle("is-hidden");
+    container.classList.toggle("no-padding");
   });
 })();
