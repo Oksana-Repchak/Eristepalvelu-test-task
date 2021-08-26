@@ -122,6 +122,7 @@ img {
   .menu-container {
     position: absolute;
     display: none;
+    width: 100%;
     top: 100%;
     min-width: 320px;
     height: 430px;
@@ -166,7 +167,12 @@ img {
 .heder {
   position: relative;
   padding-top: 22px;
-  border-bottom: 1px solid #e0e0e0;
+}
+
+@media screen and (min-width: 1024px) {
+  .heder {
+    border-bottom: 1px solid #e0e0e0;
+  }
 }
 
 .main-nav {
@@ -219,6 +225,16 @@ img {
   }
 }
 
+.logo {
+  margin-right: 100px;
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    margin-right: 0;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .icon-logo {
     width: 155px;
@@ -226,12 +242,14 @@ img {
   }
 }
 
-.wrapper-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  justify-items: center;
+@media screen and (min-width: 1024px) {
+  .wrapper-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    justify-items: center;
+  }
 }
 
 .menu-link {
@@ -419,17 +437,25 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 1023px) {
   .hero-logo {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-logo {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -497,18 +523,22 @@ img {
   }
 }
 
-.wrapper-button {
-  margin-right: auto;
+@media screen and (min-width: 1024px) {
+  .wrapper-button {
+    margin-right: auto;
+  }
 }
 
-.wrapper-slider-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr 2fr;
-      grid-template-columns: 1fr 2fr 2fr;
-  -ms-grid-rows: 1fr 1.5fr;
-      grid-template-rows: 1fr 1.5fr;
-  justify-items: center;
+@media screen and (min-width: 1024px) {
+  .wrapper-slider-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr 2fr;
+        grid-template-columns: 1fr 2fr 2fr;
+    -ms-grid-rows: 1fr 1.5fr;
+        grid-template-rows: 1fr 1.5fr;
+    justify-items: center;
+  }
 }
 
 @media screen and (min-width: 2160px) {
@@ -519,6 +549,7 @@ img {
 
 .hero-button {
   margin: 0;
+  margin-bottom: 25px;
   border: none;
   padding: 18px 95px;
   min-width: 290px;
@@ -536,8 +567,9 @@ img {
 
 @media screen and (min-width: 1024px) {
   .hero-button {
-    padding: 18px 60px;
     min-width: 220px;
+    padding: 18px 60px;
+    margin-bottom: 36px;
   }
 }
 
@@ -554,6 +586,10 @@ img {
           align-items: center;
 }
 
+.hero-logo-color .item:not(:last-child) {
+  margin-right: 20px;
+}
+
 @media screen and (max-width: 1023px) {
   .hero-logo-color {
     -webkit-box-pack: center;
@@ -562,8 +598,10 @@ img {
   }
 }
 
-.hero-logo-color .item:not(:last-child) {
-  margin-right: 3px;
+@media screen and (min-width: 1024px) {
+  .hero-logo-color .item:not(:last-child) {
+    margin-right: 3px;
+  }
 }
 
 .green-rectangle {
@@ -584,7 +622,6 @@ img {
   padding-top: 15px;
   padding-left: 15px;
   padding-bottom: 15px;
-  min-width: 600px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -600,15 +637,16 @@ img {
 }
 
 .slideshow-container {
-  position: relative;
+  position: absolute;
   max-width: 290px;
-  bottom: 25%;
-  left: 17%;
+  top: 50%;
 }
 
 @media screen and (min-width: 1024px) {
   .slideshow-container {
     max-width: 400px;
+    bottom: 25%;
+    left: 17%;
   }
 }
 
@@ -659,8 +697,14 @@ img {
 .slider-nav {
   position: relative;
   background-image: url("./../images/frame.jpg");
-  min-width: 289px;
-  min-height: 52px;
+}
+
+@media screen and (max-width: 1023px) {
+  .slider-nav {
+    max-width: 289px;
+    min-height: 52px;
+    top: 110px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -695,9 +739,12 @@ img {
   fill: #ffffff;
 }
 
+.slider-wrapper {
+  position: relative;
+}
+
 @media screen and (min-width: 1024px) {
   .slider-wrapper {
-    position: relative;
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;

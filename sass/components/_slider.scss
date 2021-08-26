@@ -3,18 +3,16 @@
 }
 
 .slideshow-container {
-  position: relative;
+  position: absolute;
   max-width: 290px;
 
-  bottom: 25%;
-  left: 17%;
-  // top: -100px;
+  top: 50%;
   // left: 5px;
 
   @media screen and (min-width: $desktop-screen) {
     max-width: 400px;
-    // top: -215px;
-    // left: 210px;
+    bottom: 25%;
+    left: 17%;
   }
 
   @media screen and (min-width: 2000px) {
@@ -73,8 +71,12 @@
 .slider-nav {
   position: relative;
   background-image: url("./../images/frame.jpg");
-  min-width: 289px;
-  min-height: 52px;
+
+  @media screen and (max-width: $desktop-screen - 1px) {
+    max-width: 289px;
+    min-height: 52px;
+    top: 110px;
+  }
 
   @media screen and (min-width: $desktop-screen) {
     max-width: 310px;
@@ -110,11 +112,8 @@
 }
 
 .slider-wrapper {
+  position: relative;
   @media screen and (min-width: $desktop-screen) {
-    position: relative;
-    // top: -550px;
-    // right: -310px;
-
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 2;
